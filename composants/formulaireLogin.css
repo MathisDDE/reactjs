@@ -1,0 +1,105 @@
+/* Style de base pour le corps */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+/* Conteneur du formulaire */
+.form-container {
+    background-color: white;
+    padding: 50px; /* Augmenter le padding pour plus d'espace interne */
+    border-radius: 15px; /* Un peu plus de courbure sur les coins */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agrandir l'ombre */
+    max-width: 500px; /* Formulaire plus large */
+    width: 100%; /* S'assurer qu'il prend toute la largeur disponible */
+    text-align: center;
+    transition: all 0.3s ease; /* Animation légère pour les transitions */
+}
+
+/* Titre du formulaire */
+.form-container h2 {
+    margin-bottom: 30px; /* Espace plus grand en dessous du titre */
+    font-size: 32px; /* Taille de police plus grande */
+    color: #333;
+}
+
+/* Champs de formulaire */
+.form-group {
+    margin-bottom: 25px; /* Augmenter l'espace entre les champs */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px; /* Taille de police augmentée */
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px; /* Augmenter le padding pour rendre les champs plus grands */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Arrondir davantage les coins des champs */
+    font-size: 18px; /* Police plus grande */
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #fff;
+}
+
+/* Bouton de soumission */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px; /* Plus de padding pour un bouton plus grand */
+    border: none;
+    border-radius: 10px; /* Bouton arrondi */
+    cursor: pointer;
+    font-size: 18px; /* Taille de police plus grande */
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Bouton de basculement */
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px; /* Taille de police augmentée pour plus de visibilité */
+    margin-top: 20px;
+}
+
+.toggle-btn:hover {
+    text-decoration: underline;
+    color: #45a049;
+}
+/* Ajouter un background global pour le formulaire */
+
+
+/* Conteneur du formulaire */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.85); /* Couleur blanche avec transparence */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}

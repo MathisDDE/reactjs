@@ -1,0 +1,47 @@
+/* Main (Body) */
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 10000px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 20px; /* Espace entre les sections */
+    padding-bottom: 60px; /* Espace en bas de la page */
+    
+}
+
+.gauche, .droite, .centre {
+    background-color: #e0f7fa; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.gauche, .droite {
+    width: 3000px; /* Augmenter la taille des colonnes gauche et droite */
+    height: 700px;
+    
+}
+
+.centre {
+    width: 7000px; /* La section centrale est légèrement plus grande */
+    height: 700px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}

@@ -1,0 +1,136 @@
+/* Header - Barre de navigation */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #004E7C;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Liste des liens de navigation */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Barre de recherche */
+.search-bar-container {
+  position: relative;
+  width: 400px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1; /* Permet à l'input de s'étendre dans l'espace disponible */
+  padding: 10px 15px;
+  border-radius: 5px 0 0 5px; /* Bordure arrondie à gauche seulement */
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%; /* Assure que l'input prend tout l'espace possible */
+}
+
+.search-bar button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0; /* Bordure arrondie à droite seulement */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+}
+
+/* Suggestions sous la barre de recherche */
+.suggestions-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%; /* Juste en dessous de la barre de recherche */
+  right: 1; /* Aligne la liste à droite */
+  width: 200px; /* Réduit la largeur de la liste */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none; /* Évite la double bordure avec l'input */
+  max-height: 250px; /* Limite la hauteur pour que la liste défile si trop d'éléments */
+  overflow-y: auto; /* Ajoute le défilement vertical si trop de suggestions */
+  z-index: 1000; /* Assure que la liste passe au-dessus du reste de la page */
+}
+
+.suggestions-list li {
+  padding: 5px; /* Réduit le padding pour un style plus compact */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333; /* Change la couleur du texte des suggestions */
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style des suggestions (image + texte) */
+.suggestion-item {
+  display: flex;
+  align-items: center;
+}
+
+.suggestion-image {
+  width: 30px; /* Réduit la taille de l'image */
+  height: 30px; /* Réduit la taille de l'image */
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.suggestion-item span {
+  font-size: 12px; /* Réduit la taille du texte */
+  color: #333;
+}
+

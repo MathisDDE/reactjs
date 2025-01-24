@@ -1,0 +1,12 @@
+footer {
+    background-color: #003955;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Le footer reste fixé en bas */
+    bottom: 0;
+    left: 0;
+    height:7.5%;
+    width: 100%; /* Le footer prend toute la largeur de la page */
+    z-index: 1000; /* S'assurer que le footer est au-dessus des autres éléments */
+}
